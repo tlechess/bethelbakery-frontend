@@ -8,7 +8,7 @@ import { HttpClient} from '@angular/common/http';
 })
 export class SignUpService {
 
-  url: string = " https://bethel-bakery-backend.herokuapp.com/registerNewUser";
+  url: string = "https://bethel-bakery-backend.herokuapp.com/registerNewUser";
 
   constructor(private http: HttpClient) { }
 
