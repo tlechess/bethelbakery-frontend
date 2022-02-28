@@ -9,6 +9,7 @@
 
 #sign-up {
   background: #cdcdcd;
+  height: 100vh;
 }
 .flex {
   display: flex;

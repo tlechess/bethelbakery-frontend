@@ -26,7 +26,7 @@ export class OrderDetailsComponent implements OnInit {
     private location: Location,
     private route: ActivatedRoute,
     private moneyService: MoneyService
-    ) { }
+  ) { }
 
   ngOnInit(): void {
     this.getOneOrder();
@@ -45,9 +45,7 @@ export class OrderDetailsComponent implements OnInit {
     });
     
   }
-
   goBack(): void {
     this.location.back();
   }
-
 }

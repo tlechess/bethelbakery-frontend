@@ -17,10 +17,10 @@ const httpOptions = {
 export class OrderDetailsService {
 
   //check backend URL//
-  orderHistoryUrl: string = "http://localhost:8080/order-history"
-  checkoutUrl: string = "http://localhost:8080/checkout"
-  orderDetailsUrl: string = "http://localhost:8080/order-details"
-  orderUrl: string = "http://localhost:8080/order"
+  orderHistoryUrl: string = " https://bethel-bakery-backend.herokuapp.com/order-history"
+  checkoutUrl: string = "https://bethel-bakery-backend.herokuapp.com/checkout"
+  orderDetailsUrl: string = "https://bethel-bakery-backend.herokuapp.com/order-details"
+  orderUrl: string = "https://bethel-bakery-backend.herokuapp.com/order"
 
   constructor(
     private http:HttpClient, 
@@ -53,7 +53,6 @@ export class OrderDetailsService {
 
     return this.http.get<Order>(`${this.orderUrl}/${id}`, httpOptions);
   }
-
 
   //Submits the order to the backend
   submitOrder(order: Order) {

@@ -6,7 +6,6 @@ import { CartItem } from 'src/app/models/cart-item/cart-item';
 import { Product } from 'src/app/models/product/product';
 import { AuthService } from '../auth/auth.service';
 
-
 @Injectable({
   providedIn: 'root'
 })
@@ -78,15 +77,4 @@ export class CartDataService {
   }
 }
 
-  // getTotalInCart = () :number => 
-  // {
-  //   this.getCartItems().subscribe(response => this.cartItems = response);
-  //   let totalQty:number = 0;
-  //   for(var i = 0; i < this.cartItems.length; i++) {
-  //     totalQty = totalQty + this.cartItems[i].productQuantity;
-      
-  //   }
-  //   console.log(totalQty);
-  //   return totalQty;
-  // } 
-
+  

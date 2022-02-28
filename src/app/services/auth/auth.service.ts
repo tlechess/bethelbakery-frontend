@@ -13,13 +13,9 @@ import { tap, delay } from 'rxjs/operators'
 })
 export class AuthService {
 
-  url: string = "http://localhost:8080/authenticate";
-
-
-  // isLoggedin = false;
-
-   // store the URL so we can redirect after logging in
-   redirectUrl: string | null = null;
+  // url: string = "http://localhost:8080/authenticate";
+  url: string = "https://bethel-bakery-backend.herokuapp.com/authenticate";
+  redirectUrl: string | null = null;
 
   constructor(private http: HttpClient) { }
 
@@ -67,18 +63,5 @@ export class AuthService {
     }else {
       return false;
     }
-  }
-
-  // login(): Observable<boolean> {
-  //   return of(true).pipe(
-  //     delay(1000),
-  //     tap(() => this.isLoggedin = true)
-  //   );
-  // }
-
-  // logout(): void {
-  //   this.isLoggedin = false;
-  // }
-
-
+  } 
 }

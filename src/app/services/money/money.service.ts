@@ -47,6 +47,4 @@ export class MoneyService {
     amount = Math.round((amount + Number.EPSILON) * 100) / 100;
     return amount;
   }
-
-
 }

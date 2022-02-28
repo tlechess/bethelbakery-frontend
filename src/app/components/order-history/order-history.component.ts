@@ -22,5 +22,4 @@ export class OrderHistoryComponent implements OnInit {
   getOrders = () => {
     this.orderService.getOrders().subscribe(response => this.orders = response);
   }
-
 }

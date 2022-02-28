@@ -23,6 +23,4 @@ describe('CustomerDetailsComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
-  // tslint:disable-next-line: typedef
-
 });

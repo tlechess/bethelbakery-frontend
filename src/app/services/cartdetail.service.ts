@@ -26,10 +26,6 @@ export class CartdetailService {
    localStorage.setItem("cartItems", JSON.stringify(cartItemsFromLocalStorage));
     
   }
-
-
-
-
- }
+}
 
 

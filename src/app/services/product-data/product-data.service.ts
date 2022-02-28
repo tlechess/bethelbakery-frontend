@@ -7,7 +7,8 @@ import { Product } from 'src/app/models/product/product';
 export class ProductDataService {
 
   //Properties
-  productUrl: string = "http://localhost:8080/product"
+  //productUrl: string = "http://localhost:8080/product"
+  productUrl: string = " https://bethel-bakery-backend.herokuapp.com/product"
   
   constructor(private http: HttpClient) {}
 

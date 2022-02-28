@@ -28,10 +28,6 @@ export class ProductCardsComponent implements OnInit {
     alert(this.createMessage(product));
   }
   
-  
-
-
-
   getProducts = () => {
     this.productService.getProducts().subscribe(products => this.products = products);
   }

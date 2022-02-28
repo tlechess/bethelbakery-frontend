@@ -13,10 +13,7 @@ export class NavBarComponent implements OnInit {
 
   constructor(private cartDataService: CartDataService, private authService: AuthService) { }
 
-  ngOnInit(): void {
-    // this.getQtyTotal()
-    // this.getQtyTotal()  
-  }
+  ngOnInit(): void {}
 
   logOut(){
     this.authService.logOut();
@@ -29,7 +26,5 @@ export class NavBarComponent implements OnInit {
   isAdmin(): boolean {
     return this.authService.isAdmin();
   }
-//   getQtyTotal (): void {
-//     this.count = this.cartDataService.getTotalInCart();
-//     console.log(this.count);
-  } 
+
+} 

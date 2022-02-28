@@ -20,7 +20,6 @@ export class LoginComponent implements OnInit {
   invalidLogin: boolean = false;
 
   constructor(private newCustomerInfo: CartDataService, private authService: AuthService, private router: Router) { }
-  // will we need to access cardDataService in order to refference current users order history or just declare/import order history? is cartDataService soley for localStorage for active orders?
 
   ngOnInit(): void {
   }
@@ -41,7 +40,5 @@ export class LoginComponent implements OnInit {
   goToSignUp() {
     this.router.navigate(['sign-up']);    
   }
-
 }
 
-// comment out code until Customer model is change after order model is merged and CustDet is uncommented 
